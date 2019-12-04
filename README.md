@@ -1,6 +1,10 @@
 # MMediaPlayer
 The Media player Extension for the MediaWiki engine
 
+### Requires
+- MediaWiki >= 1.29.0
+- PHP >= 7.0
+
 ### Install
 - Download extension
 - Unpack extension: `tar xzf extension_name.tar.gz`
