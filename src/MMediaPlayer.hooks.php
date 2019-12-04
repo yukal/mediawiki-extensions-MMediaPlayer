@@ -110,11 +110,11 @@ class MMediaPlayerHooks {
      * @see https://www.mediawiki.org/wiki/Manual:ParserOutput.php
      * @see https://doc.wikimedia.org/mediawiki-core/1.33.1/php/classParser.html
      *
-     * @param  mixed $parser The Parser object
-     * @param  mixed $video_src URL link to a video file
-     * @param  mixed $img_src URL link to a picture of the video file
-     * @param  mixed $width Video-frame width
-     * @param  mixed $height Video-frame height
+     * @param  object $parser The Parser object
+     * @param  string $video_src URL link to a video file
+     * @param  string $img_src URL link to a picture of the video file
+     * @param  integer $width Video-frame width
+     * @param  integer $height Video-frame height
      *
      * @return string|array
      */
