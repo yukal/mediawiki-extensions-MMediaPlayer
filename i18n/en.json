@@ -4,5 +4,6 @@
             "Alexander Yukal"
         ]
     },
+    "mmediaplayer-name": "Multimedia Player",
     "mmediaplayer-desc": "Multimedia Player based on [https://en.wikipedia.org/wiki/HTML5_video html5] and [https://www.jwplayer.com/ jwplayer]"
 }

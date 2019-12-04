@@ -4,5 +4,6 @@
             "Alexander Yukal"
         ]
     },
+    "mmediaplayer-name": "Медіа програвач",
     "mmediaplayer-desc": "Програвач медіа файлів на основі [https://en.wikipedia.org/wiki/HTML5_video html5] та [https://www.jwplayer.com/ jwplayer]"
 }
