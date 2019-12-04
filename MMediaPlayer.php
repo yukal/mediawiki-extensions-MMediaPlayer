@@ -13,6 +13,7 @@
  * @link https://www.mediawiki.org/wiki/Extension:MMediaPlayer
  * @link https://www.mediawiki.org/wiki/Manual:Extensions
  * @link https://www.mediawiki.org/wiki/Manual:Extension_registration
+ * @link https://www.mediawiki.org/wiki/Manual:Extension.json/Schema
  * @link https://www.mediawiki.org/wiki/Manual:Configuration_settings
  * @link https://www.mediawiki.org/wiki/ResourceLoader/Core_modules
  * @link https://www.mediawiki.org/wiki/Manual:Special_pages
