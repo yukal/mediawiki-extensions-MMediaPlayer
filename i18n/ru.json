@@ -1,0 +1,8 @@
+{
+    "@metadata": {
+        "authors": [
+            "Alexander Yukal"
+        ]
+    },
+    "mmediaplayer-desc": "Проигрываетель медиа-файлов на основе [https://en.wikipedia.org/wiki/HTML5_video html5] и [https://www.jwplayer.com/ jwplayer]"
+}
