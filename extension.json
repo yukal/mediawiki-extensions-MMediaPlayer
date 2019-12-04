@@ -1,0 +1,38 @@
+{
+    "name": "MMediaPlayer",
+    "author": "Alexander Yukal <yukal@email.ua>",
+    "version": "1.0.0",
+    "url": "https://www.mediawiki.org/wiki/Extension:MMediaPlayer",
+    "descriptionmsg": "mmediaplayer-desc",
+    "license-name": "MIT",
+    "type": "parserhook",
+    "MessagesDirs": {
+        "MMediaPlayer": [
+            "i18n"
+        ]
+    },
+    "AutoloadClasses": {
+        "MMediaPlayerHooks": "src/MMediaPlayer.hooks.php"
+    },
+    "ExtensionMessagesFiles": {
+        "MMediaPlayerMagic": "src/MMediaPlayer.magic.php"
+    },
+    "Hooks": {
+        "ParserFirstCallInit": "MMediaPlayerHooks::onParserFirstCallInit",
+        "BeforePageDisplay": "MMediaPlayerHooks::onBeforePageDisplay"
+    },
+    "ResourceModules": {
+        "ext.mMediaPlayer": {
+            "scripts": "ext.mMediaPlayer.js",
+            "targets": [
+                "mobile",
+                "desktop"
+            ]
+        }
+    },
+    "ResourceFileModulePaths": {
+        "localBasePath": "static",
+        "remoteExtPath": "MMediaPlayer/static"
+    },
+    "manifest_version": 1
+}
