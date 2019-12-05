@@ -1,6 +1,8 @@
 <?php
 /**
  * MMediaPlayer Hooks
+ * https://www.mediawiki.org/wiki/Manual:Hooks
+ * https://www.mediawiki.org/wiki/Template:MediaWikiHook
  *
  * @file
  * @ingroup Extensions
@@ -30,8 +32,6 @@ class MMediaPlayerHooks {
         $parser->setFunctionHook('video-html5', [self::class, 'renderHtml5Player']);
         $parser->setFunctionHook('video-jwplayer', [self::class, 'renderJWPlayer']);
         // $parser->setHook('video-container', 'renderContainer');
-
-        return true;
     }
 
     /**
@@ -73,7 +73,7 @@ class MMediaPlayerHooks {
      * @return string|array 
      */
     public static function renderHtml5Player(Parser $parser, $src='', $width=0, $height=0) {
-        $output = '<video-unknown-format>';
+        $output = '';
 
         if (strlen($src) > 0) {
             $styles = [];
@@ -91,11 +91,12 @@ class MMediaPlayerHooks {
 
             $template = '<video src="%s" controls%s></video>';
             $output = sprintf($template, $src, $styles);
-
-            return [ $output, 'noparse' => true, 'isHTML' => true ];
         }
 
-        return $output;
+        return strlen($output) > 0
+            ? [ $output, 'noparse' => true, 'isHTML' => true ]
+            : '<video-unknown-format>'
+        ;
     }
 
     /**
