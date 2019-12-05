@@ -4,15 +4,15 @@
     "version": "1.0.0",
     "license-name": "MIT",
     "author": "Alexander Yukal <yukal@email.ua>",
-    "url": "https://www.mediawiki.org/wiki/Extension:MMediaPlayer",
+    "url": "https://github.com/yukal/wiki-mmediaplayer",
     "namemsg": "mmediaplayer-name",
     "descriptionmsg": "mmediaplayer-desc",
     "type": "parserhook",
     "requires": {
         "MediaWiki": ">= 1.29.0",
         "platform": {
-			"php": ">= 7.0"
-		}
+            "php": ">= 7.0"
+        }
     },
     "MessagesDirs": {
         "MMediaPlayer": [
