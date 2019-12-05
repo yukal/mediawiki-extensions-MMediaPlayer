@@ -1,13 +1,13 @@
 <?php
 /**
- * Aliases for Special:MMediaPlayer
  * Internationalization file.
+ * Aliases for Special:MMediaPlayer
+ * https://www.mediawiki.org/wiki/Manual:Special_pages#The_aliases_file
  *
  * @file
  * @ingroup Extensions
  * @version 1.0
  * @author Alexander Yukal <yukal@email.ua>
- * @link https://www.mediawiki.org/wiki/Manual:Special_pages#The_aliases_file
  */
 
 $specialPageAliases = [];

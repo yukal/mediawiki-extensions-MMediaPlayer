@@ -1,14 +1,14 @@
 <?php
 /**
  * Magic Words
+ * https://www.mediawiki.org/wiki/Manual:Magic_words
+ * https://www.mediawiki.org/wiki/Help:Magic_words
  *
  * @file
  * @ingroup Extensions
  * @version 1.0
  * @author Alexander Yukal <yukal@email.ua>
  * @license https://opensource.org/licenses/MIT MIT License
- * @link https://www.mediawiki.org/wiki/Manual:Magic_words Magic Words Manual
- * @link https://www.mediawiki.org/wiki/Help:Magic_words Magic Words Usage
  */
 
 $magicWords = [];

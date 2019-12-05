@@ -5,15 +5,15 @@
  * Finds and activates all video elements on a page.
  *
  * MediaWiki Manual
- * @link https://doc.wikimedia.org/mediawiki-core/master/js/#!/api/mw
- * @link https://doc.wikimedia.org/mediawiki-core/master/js/#!/api/jQuery
- * @link https://www.mediawiki.org/wiki/Manual:$wgResourceModules
- * @link https://www.mediawiki.org/wiki/Adding_javascript_to_wiki_pages
- * @link https://www.mediawiki.org/wiki/ResourceLoader/Core_modules
+ * https://doc.wikimedia.org/mediawiki-core/master/js/#!/api/mw
+ * https://doc.wikimedia.org/mediawiki-core/master/js/#!/api/jQuery
+ * https://www.mediawiki.org/wiki/Manual:$wgResourceModules
+ * https://www.mediawiki.org/wiki/Adding_javascript_to_wiki_pages
+ * https://www.mediawiki.org/wiki/ResourceLoader/Core_modules
  *
  * JWPlayer official website and documentation
- * @link https://developer.jwplayer.com/jwplayer/docs
- * @link https://www.jwplayer.com
+ * https://developer.jwplayer.com/jwplayer/docs
+ * https://www.jwplayer.com
  *
  * @file
  * @ingroup Extensions

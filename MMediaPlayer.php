@@ -5,20 +5,30 @@
  * To activate this extension, add the following into your LocalSettings.php file:
  * wfLoadExtension( 'MMediaPlayer' );
  *
+ * MediaWiki Manual
+ * https://www.mediawiki.org/wiki/Manual:Extensions
+ * https://www.mediawiki.org/wiki/Manual:Extension_registration
+ * https://www.mediawiki.org/wiki/Manual:Extension.json/Schema
+ * https://www.mediawiki.org/wiki/Manual:Configuration_settings
+ * https://www.mediawiki.org/wiki/Manual:Special_pages
+ * https://www.mediawiki.org/wiki/ResourceLoader/Core_modules
+ * https://www.mediawiki.org/wiki/Localisation
+ *
+ * MediaWiki Documentation
+ * https://doc.wikimedia.org/
+ * https://doc.wikimedia.org/mediawiki-core/master/js/#!/api/mw
+ * https://doc.wikimedia.org/mediawiki-core/master/js/#!/api/jQuery
+ *
+ * JWPlayer official website and documentation
+ * https://www.jwplayer.com
+ * https://developer.jwplayer.com/jwplayer/docs
+ *
  * @file
  * @ingroup Extensions
  * @version 1.0
  * @author Alexander Yukal <yukal@email.ua>
  * @license https://opensource.org/licenses/MIT MIT License
  * @link https://www.mediawiki.org/wiki/Extension:MMediaPlayer
- * @link https://www.mediawiki.org/wiki/Manual:Extensions
- * @link https://www.mediawiki.org/wiki/Manual:Extension_registration
- * @link https://www.mediawiki.org/wiki/Manual:Extension.json/Schema
- * @link https://www.mediawiki.org/wiki/Manual:Configuration_settings
- * @link https://www.mediawiki.org/wiki/ResourceLoader/Core_modules
- * @link https://www.mediawiki.org/wiki/Manual:Special_pages
- * @link https://www.mediawiki.org/wiki/Localisation
- * @link https://doc.wikimedia.org/
  */
 
 if ( function_exists( 'wfLoadExtension' ) ) {

@@ -2,4 +2,3 @@
 // from the official website:
 //
 // https://www.jwplayer.com/
-//
