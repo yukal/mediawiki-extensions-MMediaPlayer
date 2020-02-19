@@ -1,20 +1,21 @@
-# MMediaPlayer
-The Media player Extension for the MediaWiki engine
+# mediawiki-extensions-MMediaPlayer
+
+This extension attaches internal and external videos to the MediaWiki pages based on HTML5 and JWplayer
 
 ### Requires
 - MediaWiki >= 1.29.0
 - PHP >= 7.0
 
-### Install
-- Download extension
-- Unpack extension: `tar xzf extension_name.tar.gz`
-- Rename unpacked extension directory to MMediaPlayer
-- Copy MMediaPlayer to MediaWiki extensions
-- Set permissions of MMediaPlayer directory to a web user
-- Activate extension in LocalSettings.php
+## Install
+See how to [install extensions](https://www.mediawiki.org/wiki/Manual:Extensions#Installing_an_extension)
 
-To activate this extension, add the following into your LocalSettings.php file:
+Download, unpack, rename the unpacked directory to `MMediaPlayer` and then just put this directory with the scripts into `MediaWiki` extensions directory.
+
+Find the `LocalSettings.php` file in the root of `MediaWiki` directory and paste this code
+```php
+// Activate extension
 wfLoadExtension( 'MMediaPlayer' );
+```
 
 ### Usage
 html5 video player:
