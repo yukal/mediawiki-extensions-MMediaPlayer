@@ -1,6 +1,6 @@
 # mediawiki-extensions-MMediaPlayer
 
-This extension attaches internal and external videos to the MediaWiki pages based on HTML5 and JWplayer
+This extension attaches video-sources based on HTML5 and JWplayer to the MediaWiki pages by internal and external links
 
 ### Requires
 - MediaWiki >= 1.29.0
