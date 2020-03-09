@@ -26,12 +26,14 @@
         "MMediaPlayerMagic": "src/MMediaPlayer.magic.php"
     },
     "Hooks": {
-        "ParserFirstCallInit": "MMediaPlayerHooks::onParserFirstCallInit",
-        "BeforePageDisplay": "MMediaPlayerHooks::onBeforePageDisplay"
+        "ParserFirstCallInit": "MMediaPlayerHooks::onParserFirstCallInit"
     },
     "ResourceModules": {
         "ext.mMediaPlayer": {
-            "scripts": "ext.mMediaPlayer.js",
+            "scripts": [
+                "jwplayer.js",
+                "ext.mMediaPlayer.js"
+            ],
             "targets": [
                 "mobile",
                 "desktop"

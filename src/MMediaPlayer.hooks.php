@@ -31,27 +31,8 @@ class MMediaPlayerHooks {
     public static function onParserFirstCallInit(Parser $parser) {
         $parser->setFunctionHook('video-html5', [self::class, 'renderHtml5Player']);
         $parser->setFunctionHook('video-jwplayer', [self::class, 'renderJWPlayer']);
-        // $parser->setHook('video-container', 'renderContainer');
-    }
 
-    /**
-     * onBeforePageDisplay
-     * Allows last minute changes to the output page, e.g. adding of CSS or JavaScript by extensions
-     *
-     * @see https://www.mediawiki.org/wiki/Manual:Hooks/BeforePageDisplay
-     * @see https://www.mediawiki.org/wiki/Manual:OutputPage.php
-     * @see https://doc.wikimedia.org/mediawiki-core/1.33.1/php/classOutputPage.html
-     * @see https://doc.wikimedia.org/mediawiki-core/1.33.1/php/classSkin.html
-     *
-     * @param  object $out The OutputPage object
-     * @param  object $skin Skin object that will be used to generate the page
-     *
-     * @return void
-     */
-    public static function onBeforePageDisplay(OutputPage $out, Skin $skin) {
-        $out->addHeadItem('jwplayer', '<script src="https://cdn.jwplayer.com/libraries/your_id_of_jwplayer.js"></script>');
-        // $out->addHeadItem('jwplayer', '<script src="/extensions/MMediaPlayer/static/jwplayer.js"></script>');
-        // $out->addScriptFile('/extensions/MMediaPlayer/static/jwplayer.js');
+        return true;
     }
 
     /**
@@ -64,6 +45,7 @@ class MMediaPlayerHooks {
      * @see https://www.mediawiki.org/wiki/Manual:Parser.php
      * @see https://www.mediawiki.org/wiki/Manual:ParserOutput.php
      * @see https://doc.wikimedia.org/mediawiki-core/1.33.1/php/classParser.html
+     * @see https://www.mediawiki.org/wiki/ResourceLoader/Developing_with_ResourceLoader
      *
      * @param  object $parser The Parser object
      * @param  string $src URL link to a video file
@@ -110,6 +92,7 @@ class MMediaPlayerHooks {
      * @see https://www.mediawiki.org/wiki/Manual:Parser.php
      * @see https://www.mediawiki.org/wiki/Manual:ParserOutput.php
      * @see https://doc.wikimedia.org/mediawiki-core/1.33.1/php/classParser.html
+     * @see https://www.mediawiki.org/wiki/ResourceLoader/Developing_with_ResourceLoader
      *
      * @param  object $parser The Parser object
      * @param  string $video_src URL link to a video file
@@ -129,6 +112,7 @@ class MMediaPlayerHooks {
         $height = gettype($height) != 'integer' ? self::$defaultHeight 
             : ($height>0 ?$height :self::$defaultHeight);
 
+        // $parser->getOutput()->addHeadItem('jwplayer-script', '<script src="/extensions/MMediaPlayer/static/jwplayer.js"></script>');
         $parser->getOutput()->addModules('ext.mMediaPlayer');
         $output = sprintf('<div id="%s" data-file="%s" data-image="%s" data-width="%d" data-height="%d"></div>', 
             $id, 
